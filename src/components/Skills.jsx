@@ -6,7 +6,7 @@ const Skills = () => {
   let skillStyle=`px-4 py-2 flex items-center w-[180px] rounded-[9999px] justify-center shadow-lg shadow-gray-300'`
   return (
     <section id="skills" className='max-w-7xl min-h-[85vh] mx-auto px-20 py-10 snap-y scroll-mt-[7.5em]'>
-        <h2 className='font-[500] text-5xl pb-6'>Tech Stack</h2>
+        <h2 className='font-[500] text-5xl pb-6' data-aos='zoom-in'>Tech Stack</h2>
         <p className='text-2xl'>Tools I can work with</p>
         <section className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 text-xl mt-10'>
         <div className={skillStyle}>

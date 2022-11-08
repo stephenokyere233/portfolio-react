@@ -1,9 +1,9 @@
 import React from 'react'
 import logo from './logo.png'
 
-const Header = () => {
+const Header = ({back}) => {
   return (
-    <header className='flex justify-between lg:justify-around shadow-md z-10 bg-white shadow-gray-200 p-6  items-center sticky top-0'>
+    <header className={`flex justify-between lg:justify-around z-10 ${back} p-6  items-center sticky top-0`}>
         <a href="steve#">
           <img src={logo} alt="" className="w-[50px]" />
         </a>
@@ -14,9 +14,9 @@ const Header = () => {
             <a href="/steve#skills">Skills</a>
             <a href="/steve#contact">Contact</a>
         </nav>
-        <button className='bg-purple-600 p-4 rounded-[100px]'>
+        <a className='bg-purple-600 p-4 rounded-[100px]'href={'https://resume.showwcase.com/devsteve.pdf'} >
             Download CV
-        </button>
+        </a>
       
     </header>
   )

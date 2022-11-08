@@ -8,8 +8,8 @@ const About = () => {
     AOS.refresh();
   }, []);
   return (
-    <section id="about" className='max-w-7xl min-h-[70vh] mx-auto px-20 py-10 snap-y scroll-mt-[7.5em]' >
-        <h2 className='font-[500] text-5xl pb-6' data-aos='slide-left'>About</h2>
+    <section id="about" className='lg:max-w-7xl sm:max-w-screen  min-h-[70vh] mx-auto px-20 py-10 snap-y scroll-mt-[7.5em]' >
+        <h2 className='font-[500] text-5xl pb-6' data-aos='zoom-in'>About</h2>
         <p className='align-justify leading-[2em] text-2xl' data-aos='zoom-in'>
             Tech is one thing I'm very passionate about,I love to learn new
             stuff. I was a bit late to programming tho buh I'm doing my best
