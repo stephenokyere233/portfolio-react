@@ -4,7 +4,7 @@ export const ProjectData = [
     name: "Palindrome Checker",
     imgSrc:
       "https://res.cloudinary.com/devsteveserver/image/upload/v1658972277/pow_iibcpq.png",
-    desc: "Find Out If A Word Or A Number Is A Palindrome",
+    desc: "Check for Palindromes",
     siteLink: "https://palindromcheck.netlify.app/",
   },
   {
@@ -12,7 +12,7 @@ export const ProjectData = [
     name: "Landing Page",
     imgSrc:
       "https://res.cloudinary.com/devsteveserver/image/upload/v1658864145/pow_rwbslg.png",
-    desc: "Find Out If A Word Or A Number Is A Palindrome",
+    desc: "Get a hold of me",
     siteLink: "https://dev-steve.netlify.app/",
   },
   {
@@ -36,8 +36,8 @@ export const ProjectData = [
     name: "Switch",
     imgSrc:
       "https://res.cloudinary.com/devsteveserver/image/upload/v1659633596/switch_ovcrbj.jpg",
-    desc: "Find Out If A Word Or A Number Is A Palindrome",
-    siteLink: "https://palindromcheck.netlify.app/",
+    desc: "Dark mode-Light mode switch",
+    siteLink: "https://codepen.io/stephenokyere233/pen/rNdpJjY",
   },
   {
     id: 6,
