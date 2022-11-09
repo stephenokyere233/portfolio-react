@@ -10,17 +10,18 @@ const Hero = () => {
     AOS.refresh();
   }, []);
   return (
-    <main className='min-h-[85vh] max-w-7xl sm: m-auto flex flex-col lg:flex-row justify-around items-center' data-aos='zoom-in'>
-        <section className='leading-[2.5em'>
-            <h1 className='text-[3.5em] font-bold'>I'm Stephen <span className='text-purple-700'>Okyere,</span></h1>
+    <main className='px-4 md:px-10 ' data-aos='zoom-in'>
+       <div className='overflow-hidden min-h-[85vh] lg:max-w-7xl mx-auto flex flex-col lg:flex-row justify-evenly items-center '>
+         <section className='leading-[2.5em '>
+            <h1 className='text-[2.5em] md:text-[3.5em] font-bold'>I'm Stephen <span className='text-purple-700'>Okyere,</span></h1>
             <p className='font-semibold text-lg mb-8'>Frontend Developer &clubs; Content Creator</p>
-            <a href="/steve#contact" className='bg-purple-600 py-4 px-6 rounded-[100px] '>
+            <a href="/steve#contact" className='bg-purple-600 py-4 px-10 w-[300px] rounded-[100px] '>
                 Let's Link Up!&rarr;
             </a>
 
         </section>
-        <img className="w-[30em] rounded-[9999px]" src={profile} alt="" />
-        {/* <Dark/> */}
+        <img className="w-[30em] m-6 rounded-[9999px] overflow-x-hidden" src={profile} alt="" />
+       </div>
     </main>
   )
 }

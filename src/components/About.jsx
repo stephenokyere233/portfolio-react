@@ -8,9 +8,9 @@ const About = () => {
     AOS.refresh();
   }, []);
   return (
-    <section id="about" className='lg:max-w-7xl sm:max-w-screen  min-h-[70vh] mx-auto px-20 py-10 snap-y scroll-mt-[7.5em]' >
+    <section id="about" className='lg:max-w-7xl w-screen min-h-[70vh] mx-auto px-8 lg:px-20 py-10 snap-y scroll-mt-[6em]' >
         <h2 className='font-[500] text-5xl pb-6' data-aos='zoom-in'>About</h2>
-        <p className='align-justify leading-[2em] text-2xl' data-aos='zoom-in'>
+        <p className='align-justify leading-[2em] lg:leading-[2.1em] text-lg lg:text-2xl' data-aos='zoom-in'>
             Tech is one thing I'm very passionate about,I love to learn new
             stuff. I was a bit late to programming tho buh I'm doing my best
             and I try to document my progress everyday by building new stuff.

@@ -45,7 +45,7 @@ function toggle(){
 
   return (
     // <DarkProvider>
-    <div className={`box-border scroll-smooth select-none ${dark?'bg-[#222] text-white':'bg-white text-black'}`}>
+    <div className={`box-border relative scroll-smooth select-none ${dark?'bg-[#222] text-white':'bg-white text-black'}`}>
   <Header back={dark?'bg-[#222]':'bg-white'}/>
   <Hero/>
   <Dark onToggle={toggle} dark={dark} back={dark?'border-white':'border-[#222]'}/>

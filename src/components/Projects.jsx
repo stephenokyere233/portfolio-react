@@ -10,9 +10,9 @@ const Projects = () => {
     AOS.refresh();
   }, []);
   return (
-    <section id="projects" className='max-w-7xl min-h-[85vh] mx-auto px-20 py-10  snap-y scroll-mt-[6em]'>
+    <section id="projects" className='lg:max-w-7xl w-screen px-8 lg:px-20  min-h-[85vh] mx-auto py-10  snap-y scroll-mt-[6em]'>
         <h2 className='font-[500] text-5xl pb-6' data-aos="zoom-in">Projects</h2>
-        <p className='text-2xl'>Some stuff I built</p>
+        <p className='text-xl lg:text-2xl'>Some stuff I built</p>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-20   mt-10'>
           {ProjectData.map(project=>(<Project key={project.id} name={project.name}
           description={project.desc}
