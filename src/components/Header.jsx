@@ -3,7 +3,7 @@ import logo from './logo.png'
 
 const Header = ({back}) => {
   return (
-    <header className={`max-w-7xl mx-auto flex justify-between z-10 ${back} p-6  items-center sticky top-0`}>
+    <header className={`max-w-7xl mx-auto flex justify-between z-10 ${back} px-6 h-[5em]  items-center sticky top-0`}>
         <a href="steve#">
           <img src={logo} alt="" className="w-[50px]" />
         </a>
