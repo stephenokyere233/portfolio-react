@@ -9,9 +9,9 @@ const Contact = () => {
        <div className="flex flex-wrap gap-8 my-10 px-4">
         <a href="mailto:stephenokyere621@gmail.com"  className="text-5xl text-gray-400"><FaEnvelope/></a>
         <a href="https://twitter.com/dev__steve" className="text-5xl text-blue-500"><FaTwitter/></a>
-        <a href="" className="text-5xl text-blue-800"><FaLinkedin/></a>
-        <a href="" className="text-5xl"><FaGithub/></a>
-        <a href="" className="text-5xl text-red-600"><FaYoutube/></a>
+        <a href="https://www.linkedin.com/in/devsteve23/?originalSubdomain=gh" className="text-5xl text-blue-800"><FaLinkedin/></a>
+        <a href="https://github.com/stephenokyere233" className="text-5xl"><FaGithub/></a>
+        <a href="https://www.youtube.com/@stevedevelops" className="text-5xl text-red-600"><FaYoutube/></a>
         <a href="https://www.instagram.com/dev.__steve/" className="text-5xl text-purple-600"><FaInstagram/></a>
 
        </div>
