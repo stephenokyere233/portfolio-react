@@ -1,61 +1,58 @@
 // import React,{useEffect} from 'react'
-import { useState } from 'react'
-import About from './components/About'
-import Contact from './components/Contact'
-import Dark from './components/Dark'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Projects from'./components/Projects'
-import Skills from './components/Skills'
-// import { DarkContext,DarkProvider } from './DarkContext'
-// DarkContext,
-
+import { useState } from "react";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Dark from "./components/Dark";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
-  const[dark,setDark]=useState(false)
-function toggle(){
-  setDark(prev=>prev=!prev)
-  localStorage.setItem('dark',dark)
-  // addDark()
-}
-// window.addEventListener('load',()=>{
-  // if(toggle){
-  // let stored=localStorage.setItem('dark',dark)
-  // console.log(stored)
-  // if(toggle()){
-  //   localStorage.setItem('dark',true)
-  // }
-  // else{
-  //   localStorage.setItem('dark',false)
-  // }
-  function check(){
-    if(localStorage.getItem('dark')==='true'){
-      setDark(true)
-      console.log(true)
+  const [dark, setDark] = useState(false);
+  let html = document.querySelector("html");
+
+  if (localStorage.getItem("theme") === null) {
+    localStorage.setItem("theme", "false");
+  }
+  const check = () => {
+    let currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "true") {
+      html.classList.add("dark");
+      // setDark(true);
+    } else {
+      html.classList.remove("dark");
+      // setDark(false);
     }
-    else{
-      setDark(false)
-      console.log(false);
+  };
+  // window.addEventListener('load',check)
+  check();
+  function toggle() {
+    let currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "true") {
+      setDark(false);
+      localStorage.setItem("theme", "false");
+      html.classList.remove("dark");
+    } else {
+      setDark(true);
+      localStorage.setItem("theme", "true");
+      html.classList.add("dark");
     }
   }
-  window.addEventListener('load',check)
-  // check()
-  // console.log(localS);
-// })
 
   return (
-    // <DarkProvider>
-    <div className={`box-border relative scroll-smooth select-none ${dark?'bg-[#222] text-white':'bg-white text-black'}`}>
-  <Header back={dark?'bg-[#222]':'bg-white'}/>
-  <Hero/>
-  <Dark onToggle={toggle} dark={dark} back={dark?'border-white':'border-[#222]'}/>
-  <About/>
-  <Projects/>
-  <Skills/>
-  <Contact/>
+    <div
+      className={`box-border relative scroll-smooth select-none dark:bg-[#222] dark:text-white bg-white text-black'}`}
+    >
+      <Header />
+      <Hero />
+      <Dark onToggle={toggle} dark={dark} />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
     </div>
-    // </DarkProvider>
-  )
+  );
 }
 
-export default App
+export default App;
