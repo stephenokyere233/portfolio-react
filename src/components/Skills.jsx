@@ -1,8 +1,10 @@
 import React,{useEffect} from 'react'
 
-import {FaCss3, FaHtml5, FaJs, FaReact,FaGit} from 'react-icons/fa'
+import {FaCss3, FaHtml5, FaJs, FaReact,FaGit,FaSass} from 'react-icons/fa'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {TbBrandNextjs} from "react-icons/tb"
+import {SiTailwindcss,SiRedux} from "react-icons/si"
 
 
 const Skills = () => {
@@ -10,7 +12,7 @@ const Skills = () => {
     AOS.init();
     AOS.refresh();
   }, []);
-  let skillStyle=`px-2 py-2 flex items-center w-[170px] rounded-[9999px] justify-center shadow-lg shadow-gray-300'`
+  const skillStyle=`px-2 py-2 flex items-center w-[170px] rounded-[9999px] justify-center shadow-lg shadow-gray-300'`
   return (
     <section id="skills" className='lg:max-w-7xl w-screen px-8 lg:px-20 min-h-[75vh] mx-auto py-10 snap-y scroll-mt-[7.5em]'>
         <h2 className='font-[500] text-5xl pb-6' data-aos='zoom-in'>Tech Stack</h2>
@@ -34,11 +36,26 @@ const Skills = () => {
         </div>
           <div className={skillStyle}>
             <p className='px-2'>TailwindCSS</p>
-            <FaReact/>
+            <SiTailwindcss/>
         </div>
               <div className={skillStyle}>
             <p className='px-2'>Git</p>
             <FaGit/>
+        </div>
+             <div className={skillStyle}>
+            <p className='px-2'>NextJS</p>
+            <TbBrandNextjs/>
+        </div>     <div className={skillStyle}>
+            <p className='px-2'>React Native</p>
+            <FaReact/>
+        </div>
+         <div className={skillStyle}>
+            <p className='px-2'>Redux</p>
+            <SiRedux/>
+        </div>
+                 <div className={skillStyle}>
+            <p className='px-2'>SaSS</p>
+            <FaSass/>
         </div>
         </section>
 

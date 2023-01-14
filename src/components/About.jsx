@@ -14,7 +14,10 @@ const About = () => {
             Tech is one thing I'm very passionate about,I love to learn new
             stuff. I was a bit late to programming tho buh I'm doing my best
             and I try to document my progress everyday by building new stuff.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus a ea pariatur similique eum est aliquid rerum reiciendis, incidunt ratione!
+            I craft stunning, intuitive
+            websites and mobile apps that deliver exceptional
+            user experiences. Turning your vision into reality on
+            the web, one pixel at a time.
         </p>
     </section>
   )

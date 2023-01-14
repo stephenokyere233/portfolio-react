@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from './logo.png'
+import resume from "./resume.pdf"
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
             <a href="/steve#skills">Skills</a>
             <a href="/steve#contact">Contact</a>
         </nav>
-        <a className='bg-purple-600 p-4 rounded-[100px]'href={'https://resume.showwcase.com/devsteve.pdf'} >
+        <a className='bg-purple-600 p-4 rounded-[100px]'href={resume} >
             Download CV
         </a>
       

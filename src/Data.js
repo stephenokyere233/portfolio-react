@@ -43,8 +43,16 @@ export const ProjectData = [
     id: 6,
     name: "Palmflix",
     imgSrc:
-      "https://res.cloudinary.com/devsteveserver/image/upload/v1667387114/Screenshot_from_2022-11-02_11-04-11_xwapcv.png",
+      "https://res.cloudinary.com/devsteveserver/image/upload/v1673628462/palmflix_ytdjgz.png",
     desc: "Movie App with Trailers",
     siteLink: "https://palmflix.netlify.app/",
+  },
+  {
+    id: 7,
+    name: "Palmplayy",
+    imgSrc:
+      "https://res.cloudinary.com/devsteveserver/image/upload/v1673629272/Palmplayy_blmfyh.png",
+    desc: "Music APp with Shazam API",
+    siteLink: "https://palmplayy.vercel.app/",
   },
 ];
